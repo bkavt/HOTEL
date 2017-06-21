@@ -1,0 +1,71 @@
+*{
+	box-sizing: border-box;
+}
+@font-face {
+    font-family: my_font;
+    src: url(../my_font.TTF);
+}
+body {
+	background-color: #708090;
+    font-family: "my_font";
+    color:blue;
+    font-size: 30px;
+
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+
+.wrapper{
+	width: 100%;
+}
+
+.header{
+	height: 100px;
+	margin-bottom: 10px;
+	background: rgba(53, 32, 145, 0.48);
+	
+	
+}
+.header-inner{
+	padding-top: 15px;
+	background: white;
+	color: red;
+	
+	height: 120px;
+	text-align: center;
+}
+.sidebar{
+	
+	min-height: 500px;
+	width: 25%;
+	margin-bottom: 10px;
+	float: left;
+}
+.sidebar-inner{
+	background: white;margin-bottom: 10px;
+	float: left;
+}
+.content{
+	background: white;
+	min-height: 500px;
+	width: 75%;
+	margin-bottom: 10px;
+	float: left;
+}
+.footer{
+	background: white;
+	height: 150px;
+}
